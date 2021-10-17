@@ -12,11 +12,14 @@ namespace NotesApp
                 new Note("Whats up?", "Greet"),
                 new Note("Goodbye", "Farewell")
             };
+
+            string userChoice = "";
             
-            while (true)
+            while (userChoice != "q")
             {
+                Console.WriteLine("You can press [Q] to exit at anytime.");
                 Console.Write("(1)Add Note (2)Edit Note (3)Delete Note (4)View Notes: ");
-                string userChoice = Console.ReadLine();
+                 userChoice = Console.ReadLine().ToLower();
 
                 switch (userChoice)
                 {
@@ -86,6 +89,10 @@ namespace NotesApp
                         {
                             Console.WriteLine(singleNote.ToString());
                         }
+                        break;
+                    
+                    case "q":
+                        Console.WriteLine("GoodBye!");
                         break;
                     default:
                         Console.WriteLine("Please make a valid selection");
