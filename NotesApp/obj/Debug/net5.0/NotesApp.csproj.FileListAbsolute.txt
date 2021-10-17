@@ -1,0 +1,15 @@
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.csprojAssemblyReference.cache
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.AssemblyInfoInputs.cache
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.AssemblyInfo.cs
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.csproj.CoreCompileInputs.cache
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/NotesApp.deps.json
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/NotesApp.runtimeconfig.json
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/NotesApp.runtimeconfig.dev.json
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/NotesApp.dll
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/ref/NotesApp.dll
+/Users/hemory/RiderProjects/NotesApp/NotesApp/bin/Debug/net5.0/NotesApp.pdb
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.dll
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/ref/NotesApp.dll
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.pdb
+/Users/hemory/RiderProjects/NotesApp/NotesApp/obj/Debug/net5.0/NotesApp.genruntimeconfig.cache
