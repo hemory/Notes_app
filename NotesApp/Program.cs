@@ -8,14 +8,63 @@ namespace NotesApp
         static void Main(string[] args)
         {
 
-            List<Note> notes = new List<Note>();
-            Note note = new Note("Whats up", "Greet");
+            List<Note> notes = new List<Note>
+            {
+                new Note("Whats up?", "Greet"),
+                new Note("Goodbye", "Farewell")
+            };
+
             
-            notes.Add(note);
 
-           var val = NotesAction.EditNote("Greet", notes, "Hello");
 
-          
+
+
+            while (true)
+            {
+                
+                Console.Write("(1)Add Note (2)Edit Note (3)Delete Note (4)View Notes: ");
+                string userChoice = Console.ReadLine();
+
+                switch (userChoice)
+                {
+                    case "1":
+                        while (userChoice != "q")
+                        {
+                            Note note = new Note(null, null);
+                            
+                            Console.Write("Enter Title: ");
+                            note.Title = Console.ReadLine();
+                    
+                            Console.Write("Enter Message: ");
+                            note.Message = Console.ReadLine();
+                    
+                            notes.Add(note);
+
+                            Console.Write("Press [Enter] to add a new note or [Q] to exit");
+                            userChoice = Console.ReadLine().ToLower();
+                        }
+                    
+                    
+                        break;
+                
+                    case "2":
+                        break;
+                
+                    case "3":
+                        break;
+                    case "4":
+                        foreach (var singleNote in notes)
+                        {
+                            Console.WriteLine(singleNote.ToString());
+                        }
+                        break;
+                }
+
+                
+            }
+
+
+
         }
     }
 }

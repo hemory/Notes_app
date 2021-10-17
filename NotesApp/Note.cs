@@ -10,5 +10,10 @@ namespace NotesApp
             Message = message;
             Title = title;
         }
+
+        public override string ToString()
+        {
+            return $"Title: {Title} Message: {Message}";
+        }
     }
 }
