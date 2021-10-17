@@ -43,11 +43,30 @@ namespace NotesApp
                             Console.Write("Press [Enter] to add a new note or [Q] to exit");
                             userChoice = Console.ReadLine().ToLower();
                         }
-                    
-                    
                         break;
                 
                     case "2":
+
+                        bool isSuccessful = false;
+                        while (isSuccessful == false)
+                        {
+                            Console.Write("Enter Title of Message to Edit: ");
+                            string messageTitle = Console.ReadLine();
+
+                            Console.Write("Enter New Message: ");
+                            string newMessage = Console.ReadLine();
+                        
+                             isSuccessful = NotesAction.EditNote(messageTitle,notes,newMessage);
+
+                            if (isSuccessful)
+                            {
+                                Console.WriteLine("Message has been updated.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Unsuccessful, please try again.");
+                            }
+                        }
                         break;
                 
                     case "3":
