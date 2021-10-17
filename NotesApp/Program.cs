@@ -7,21 +7,14 @@ namespace NotesApp
     {
         static void Main(string[] args)
         {
-
             List<Note> notes = new List<Note>
             {
                 new Note("Whats up?", "Greet"),
                 new Note("Goodbye", "Farewell")
             };
-
             
-
-
-
-
             while (true)
             {
-                
                 Console.Write("(1)Add Note (2)Edit Note (3)Delete Note (4)View Notes: ");
                 string userChoice = Console.ReadLine();
 
@@ -70,12 +63,32 @@ namespace NotesApp
                         break;
                 
                     case "3":
+                        isSuccessful = false;
+                        while (isSuccessful == false)
+                        {
+                            Console.Write("Enter Title of Note to Remove: ");
+                            string noteToRemove = Console.ReadLine();
+
+                            isSuccessful = NotesAction.RemoveNote(noteToRemove, notes);
+                        
+                            if (isSuccessful)
+                            {
+                                Console.WriteLine("Message has been removed.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Unsuccessful, please try again.");
+                            }
+                        }
                         break;
                     case "4":
                         foreach (var singleNote in notes)
                         {
                             Console.WriteLine(singleNote.ToString());
                         }
+                        break;
+                    default:
+                        Console.WriteLine("Please make a valid selection");
                         break;
                 }
 
